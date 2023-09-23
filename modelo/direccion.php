@@ -1,5 +1,5 @@
 <?php
-class Titular {
+class Direccion {
 
     public $Calle;
     public $CalleNro;

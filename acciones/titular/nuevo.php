@@ -10,7 +10,18 @@ $Resp=new NuevoResponse;
 $json=file_get_contents('php://input',true);
 $req=json_decode($json);
 
-
+if($Direccion==null){
+    $Resp->ItsOk=false;
+    $Resp->Mensaje=' la dirección es obligatoria ';
+    }
+    if ($NroDocumento==null){
+        $Resp->ItsOk=false;
+        $Resp->Mensaje=' la dirección es obligatoria ';
+        }
+        if($Nombre==null){
+            $Resp->ItsOk=false;
+            $Resp->Mensaje=' El nombre es obligatorio ';
+            }
 
 
 
